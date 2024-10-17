@@ -8,477 +8,167 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="container-fluid mt-4">
-      <!-- INICIA EL HEADER -->
-      <header>
-        <nav class="navbar navbar-expand-lg">
-          <div
-            class="container d-flex justify-content-between align-items-center"
-          >
-            <!-- Elemento del logo -->
-            <a class="navbar-brand" href="#">
-              <img
-                src="assets/logo-bookmark.svg"
-                alt="Logo"
-                width="200"
-                height="auto"
-              />
-            </a>
+    <div class="main__container">
+      <div class="container">
+        <!-- OTHERS COMPONENT -->
 
-            <!-- Elementos de enlaces -->
-            <div class="d-flex align-items-center gap-4">
-              <ul class="navbar-nav gap-4">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">FEATURES</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">PRICING</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">CONTACT</a>
-                </li>
-              </ul>
+        <!-- DOWNLOAD COMPONENT -->
+        <div class="download">
+          <h3>Download the extension</h3>
+          <p>
+            We've got more browsers in the pipeline. Please Do let us know if
+            you've got a favorite you'd like us to prioritize
+          </p>
+          <div class="download__container">
+            <!-- CARD COMPONNET 1 -->
+            <div class="card">
+              <img src="assets/logo-chrome.svg" alt="chrome" />
+              <h4>Add to chrome</h4>
+              <p>Minimum version 62</p>
+              <button class="btn btn-primary">Add & install Extension</button>
+            </div>
 
-              <button class="btn btn-primary btn-lg">LOGIN</button>
+            <!-- CARD COMPONNET 2 -->
+            <div class="card">
+              <img src="assets/logo-firefox.svg" alt="firefox" />
+              <h4>Add to Firefox</h4>
+              <p>Minimum version 55</p>
+              <button class="btn btn-primary">Add & install Extension</button>
+            </div>
+
+            <!-- CARD COMPONNET 3 -->
+            <div class="card">
+              <img src="assets/logo-chrome.svg" alt="chrome" />
+              <h4>Add to chrome</h4>
+              <p>Minimum version 62</p>
+              <button class="btn btn-primary">Add & install Extension</button>
             </div>
           </div>
-        </nav>
-      </header>
+        </div>
 
-      <!-- INICIA EL MAIN -->
-      <main class="container">
-        <!-- Hero -->
-        <section class="row mt-5">
-          <div class="col-6 d-flex flex-column justify-content-center gap-3">
-            <h2 style="font-size: 60px; font-weight: 500">
-              A Simple Bookmark Manager
-            </h2>
-            <p class="fs-4" style="color: #b5b4bd">
-              A clean and simple nterface to organize your favorite websites.
-              Open a new browsertab and see your sites load nstantly. Try t for
-              free.
-            </p>
-            <div class="d-flex gap-3">
-              <button class="btn btn-primary btn-lg">Get it on Chrone</button>
-              <button class="btn btn-light btn-lg">Get it on Firefox</button>
-            </div>
-          </div>
-          <div class="col-2"></div>
-          <div class="col-4 d-flex justify-content-center">
-            <img
-              src="assets/illustration-hero.svg"
-              alt="hero"
-              style="height: 590px"
-            />
-          </div>
-        </section>
-
-        <!-- Features -->
-        <section style="margin-top: 150px">
-          <div class="row">
-            <div class="col d-flex flex-column gap-3 align-items-center">
-              <h2 style="font-size: 40px; font-weight: 600; color: #2f334e">
-                Features
-              </h2>
-              <p
-                class="w-50 text-center"
-                style="font-size: 25px; color: #c6c7ca; font-weight: 500"
-              >
-                Our iam is to make it quick and easy for youto accessyour
-                favorite websites. Your bookmarkssync between you devices so you
-                can access them or the go.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <!-- One-click-bookmark -->
-        <section class="text-center mt-5">
-          <ul
-            class="nav nav-tabs w-50 d-flex gap-4 justify-content-center m-auto"
-            style="font-size: 20px"
-          >
-            <li class="nav-item">
-              <a class="link nav-link active" onclick="showTabContent('tab1')">
-                Simple Bookmarking</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="link nav-link" onclick="showTabContent('tab2')"
-                >Speedy Searching</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="link nav-link" onclick="showTabContent('tab3')"
-                >Easy Sharing</a
-              >
-            </li>
-          </ul>
-
-          <!-- CONTENIDO DE LOS TAB -->
-          <div style="margin-top: 100px">
-            <!-- Contenido TAB_1 -->
-            <div id="tab1" class="tab-content row d-flex">
-              <div class="col-6">
-                <img
-                  src="assets/illustration-features-tab-1.svg"
-                  alt="illustration"
-                  class="img-fluid"
-                />
-              </div>
-              <div
-                class="col-6 d-flex flex-column justify-content-center gap-4"
-              >
-                <h2 class="text-start fs-1 fw-bold" style="color: #2f334e">
-                  Bookmark in one click
-                </h2>
-                <p class="text-start fs-4 fw-light" style="color: #686b73">
-                  Organize your bookmarks however you like. Our simple
-                  drag-and-drop interface gives you complete control over how
-                  you manageyour favorite sites
-                </p>
-                <button
-                  class="btn btn-primary"
-                  style="height: 60px; width: 200px"
-                >
-                  More info
-                </button>
-              </div>
-            </div>
-
-            <!-- Contenido TAB_2 -->
-            <div id="tab2" class="tab-content row d-flex d-none">
-              <div class="col-6">
-                <img
-                  src="assets/illustration-features-tab-2.svg"
-                  alt="illustration"
-                  class="img-fluid"
-                />
-              </div>
-              <div
-                class="col-6 d-flex flex-column justify-content-center gap-4"
-              >
-                <h2 class="text-start fs-1 fw-bold">Bookmark in one click</h2>
-                <p class="text-start fs-4 fw-light" style="color: #686b73">
-                  Organize your bookmarks however you like. Our simple
-                  drag-and-drop interface gives you complete control over how
-                  you manageyour favorite sites
-                </p>
-                <button
-                  class="btn btn-primary"
-                  style="height: 60px; width: 200px"
-                >
-                  More info
-                </button>
-              </div>
-            </div>
-
-            <!-- Contenido TAB_3 -->
-            <div id="tab3" class="tab-content row d-flex d-none">
-              <div class="col-6">
-                <img
-                  src="assets/illustration-features-tab-3.svg"
-                  alt="illustration"
-                  class="img-fluid"
-                />
-              </div>
-              <div
-                class="col-6 d-flex flex-column justify-content-center gap-4"
-              >
-                <h2 class="text-start fs-1 fw-bold">Bookmark in one click</h2>
-                <p class="text-start fs-4 fw-light" style="color: #686b73">
-                  Organize your bookmarks however you like. Our simple
-                  drag-and-drop interface gives you complete control over how
-                  you manageyour favorite sites
-                </p>
-                <button
-                  class="btn btn-primary"
-                  style="height: 60px; width: 200px"
-                >
-                  More info
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- SCRIPT JS PARA AGREGAR FUNCIONALIDAD DE MOSTRAR|OCULTAR CONTENIDO SEGUN EL TAB-->
-          <script>
-            function showTabContent(contentId) {
-              // Ocultar todos los divs de contenido
-              const divs = Array.from(
-                document.getElementsByClassName("tab-content")
-              );
-              divs.forEach((div) => div.classList.remove("d-block"));
-              divs.forEach((div) => div.classList.add("d-none"));
-
-              // Muestra el div que correspondiente a la selección del tab
-              const selectedDiv = document.getElementById(contentId);
-              selectedDiv.classList.remove("d-none");
-              selectedDiv.classList.add("d-block");
-
-              // Añadir la clase 'active' al tab seleccionado
-              const tabs = Array.from(document.getElementsByClassName("link"));
-              tabs.forEach((tab) => tab.classList.remove("active"));
-              event.target.classList.add("active");
-            }
-          </script>
-        </section>
-
-        <!-- Download-extension -->
-        <section style="margin-top: 200px">
-          <div class="container w-50 text-center mt-5">
-            <h2
-              class="fs-1 fw-bold"
-              style="color: #2f334e; padding-bottom: 30px"
-            >
-              Download the extension
-            </h2>
-            <p class="fs-4 fw-light" style="color: #686b73">
-              We've got more browsers in the pipeline. Please Do let us know if
-              you've got a favorite you'd like us to prioritize
-            </p>
-          </div>
-
-          <div class="cards__container">
-            <!-- Card 1 -->
-            <div class="card__container card">
-              <img
-                src="assets/logo-chrome.svg"
-                alt="chrome"
-                class="card-img mt-5"
-                style="width: 125px; height: auto; margin: 0 auto"
-              />
-              <div class="card-body text-center">
-                <h4 class="card-title">Add to chrome</h4>
-                <p class="card-text">Minimum version 62</p>
-              </div>
-              <div class="card__divisor"></div>
-              <div class="d-flex justify-content-center">
-                <a class="btn btn-primary btn-lg w-75"
-                  >Add & install Extension</a
-                >
-              </div>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="card__container card">
-              <img
-                src="assets/logo-firefox.svg"
-                alt="chrome"
-                class="card-img mt-5"
-                style="width: 125px; height: auto; margin: 0 auto"
-              />
-              <div class="card-body text-center">
-                <h4 class="card-title">Add to chrome</h4>
-                <p class="card-text">Minimum version 62</p>
-              </div>
-              <div class="card__divisor"></div>
-              <div class="d-flex justify-content-center">
-                <a class="btn btn-primary btn-lg w-75"
-                  >Add & install Extension</a
-                >
-              </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="card__container card">
-              <img
-                src="assets/logo-opera.svg"
-                alt="chrome"
-                class="card-img mt-5"
-                style="width: 125px; height: auto; margin: 0 auto"
-              />
-              <div class="card-body text-center">
-                <h4 class="card-title">Add to chrome</h4>
-                <p class="card-text">Minimum version 62</p>
-              </div>
-              <div class="card__divisor"></div>
-
-              <div class="d-flex justify-content-center">
-                <a class="btn btn-primary btn-lg w-75"
-                  >Add & install Extension</a
-                >
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Faq -->
-        <section style="margin-top: 300px" class="faqs__container">
-          <div class="faqs__header">
-            <h2>Frecuently Asked Questions</h2>
-            <p>
-              Here are some of our FAQs. If you have any other questions, you'd
-              like answered please feel free to email us
-            </p>
-          </div>
-
-          <div class="accordion faqs__body" id="acordion">
-            <!-- Item # 1 del acordion -->
+        <!-- FAQs COMPONENT -->
+        <div class="faqs">
+          <h3>Frecuently Asked Questions</h3>
+          <p>
+            Here are some of our FAQs. If you have any other questions, you'd
+            like answered please feel free to email us
+          </p>
+          <div class="accordion" id="faqs">
+            <!-- FAQs # 1 -->
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button
                   class="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne"
+                  data-bs-target="#faqs1"
                   aria-expanded="false"
-                  aria-controls="collapseOne"
+                  aria-controls="faqs1"
                 >
                   What Bookmark?
                 </button>
               </h2>
-              <div
-                id="collapseOne"
-                class="accordion-collapse collapse"
-                data-bs-parent="#acordion"
-              >
+              <div id="faqs1" class="accordion-collapse collapse">
                 <div class="accordion-body">
                   <strong> Contenido item 1</strong>
                 </div>
               </div>
             </div>
-
-            <!-- Item # 2 acordion -->
+            <!-- FAQs # 2 -->
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button
                   class="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo"
+                  data-bs-target="#faqs2"
                   aria-expanded="false"
-                  aria-controls="collapseTwo"
+                  aria-controls="faqs2"
                 >
                   How can I request a new browser?
                 </button>
               </h2>
-              <div
-                id="collapseTwo"
-                class="accordion-collapse collapse"
-                data-bs-parent="acordion"
-              >
+              <div id="faqs2" class="accordion-collapse collapse">
                 <div class="accordion-body">
                   <strong> Contenido item 2</strong>
                 </div>
               </div>
             </div>
-
-            <!-- Item # 3 acordion -->
+            <!-- FAQs # 3 -->
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button
-                  type="button"
                   class="accordion-button collapsed"
+                  type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree"
+                  data-bs-target="#faqs3"
                   aria-expanded="false"
-                  aria-controls="collapseThree"
+                  aria-controls="faqs3"
                 >
                   Is there a mobile app?
                 </button>
               </h2>
-              <div
-                id="collapseThree"
-                class="accordion-collapse collapse"
-                data-bs-parent="acordion"
-              >
+              <div id="faqs3" class="accordion-collapse collapse">
                 <div class="accordion-body">
-                  <strong> Contenido item 3 </strong>
+                  <strong> Contenido item 3</strong>
                 </div>
               </div>
             </div>
-
-            <!-- Item # 4 acordion -->
+            <!-- FAQs # 4 -->
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button
-                  type="button"
                   class="accordion-button collapsed"
+                  type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#collapseFour"
+                  data-bs-target="#faqs4"
                   aria-expanded="false"
-                  aria-controls="collapseFour"
+                  aria-controls="faqs4"
                 >
                   How about other Chromium browsers?
                 </button>
               </h2>
-              <div
-                id="collapseFour"
-                class="accordion-collapse collapse"
-                data-bs-parent="acordion"
-              >
+              <div id="faqs4" class="accordion-collapse collapse">
                 <div class="accordion-body">
-                  <strong>Contenido de item 4</strong>
+                  <strong> Contenido item41</strong>
                 </div>
               </div>
             </div>
           </div>
-          <button class="btn btn-primary">More info</button>
-        </section>
-      </main>
+          <button class="btn btn-primary" style="width: 100px">
+            More info
+          </button>
+        </div>
+      </div>
 
-      <!-- INICIA EL FOOTER -->
-      <footer style="margin-top: 200px">
-        <div class="footer__container" style="margin-top: 200px">
-          <div class="footer__contact">
-            <div class="container footer__contact__items">
-              <p style="letter-spacing: 5px">35,000+ ALREADY JOINED</p>
-              <h3 style="font-size: 40px; text-align: center">
-                Stay up-to-date with what <br />
-                we're doing
-              </h3>
-              <div class="footer__contact__action">
-                <input type="text" style="width: 400px" />
-                <button
-                  class="btn btn-primary"
-                  style="
-                    background-color: #fa5858;
-                    width: 160px;
-                    font-size: 20px;
-                  "
-                >
-                  contact Us
-                </button>
-              </div>
+      <!-- FOOTER COMPONENT -->
+      <footer class="footer">
+        <!-- NEWSLETTER COMPONNET -->
+        <div class="footer__newsletter">
+          <div class="container footer__newsletter__container">
+            <p>35,000+ ALREADY JOINED</p>
+            <h3>
+              Stay up-to-date with what <br />
+              we're doing
+            </h3>
+            <div>
+              <input type="text" />
+              <button class="btn btn-primary">Contac Us</button>
             </div>
           </div>
-
-          <div class="footer__items">
-            <div class="container footer__items__container">
-              <div class="footer__items__left">
-                <a class="navbar-brand d-flex justify-content-center">
-                  <img src="assets/logo-bookmark.svg" alt="logo" />
-                </a>
-                <ul class="navbar-nav">
-                  <div class="footer__items__left__link">
-                    <li class="nav-item">
-                      <a class="nav-link"> FEATURES </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link"> PRICING </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link"> CONTACT </a>
-                    </li>
-                  </div>
-                </ul>
-              </div>
-
-              <div class="footer__items__rigth">
-                <img
-                  src="assets/icon-facebook.svg"
-                  alt="facebook"
-                  width="30px"
-                  height="30px"
-                />
-                <img
-                  src="assets/icon-twitter.svg"
-                  alt="twiter"
-                  width="30px"
-                  height="30px"
-                />
-              </div>
+        </div>
+        <!-- FOOTER COMPONENT -->
+        <div class="footer__footer">
+          <div class="container footer__footer__container">
+            <div class="footer__footer__container__left">
+              <img src="assets/logo-bookmark.svg" alt="logo" />
+              <a>FEATURES</a>
+              <a>PRICING</a>
+              <a>CONTENT</a>
+            </div>
+            <div class="footer__footer__container__rigth">
+              <img src="assets/icon-facebook.svg" alt="facebook" />
+              <img src="assets/icon-twitter.svg" alt="twitter" />
             </div>
           </div>
         </div>

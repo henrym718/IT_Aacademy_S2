@@ -2,11 +2,12 @@
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-@import "./card.scss";
+@import "./main.scss";
 @import "./faqs.scss";
 @import "./footer.scss";
+@import "./download.scss";
 @import "./tabs.scss";
 
-body {
++ {
   margin: 0;
 }
