@@ -1,0 +1,22 @@
+.nav-tabs .nav-link {
+  color: #a4a7a9; /* Cambia el color de los enlaces por defecto */
+  position: relative; /* Necesario para el pseudo-elemento */
+}
+
+.nav-tabs .nav-link.active {
+  color: #686b73; /* Cambia el color del enlace activo */
+  background-color: transparent; /* Elimina el fondo del enlace activo */
+  border: none; /* Elimina el borde del enlace activo */
+  font-weight: 500;
+}
+
+.nav-tabs .nav-link.active::after {
+  content: ""; /* Crea un pseudo-elemento */
+  display: block; /* Hace que el pseudo-elemento sea un bloque */
+  height: 4px; /* Altura de la línea, puedes ajustarla */
+  background-color: red; /* Color de la línea */
+  width: 100%; /* Ancho de la línea */
+  position: absolute; /* Para posicionar el pseudo-elemento */
+  bottom: -4px; /* Espacio debajo del enlace */
+  left: 0; /* Para que esté alineado a la izquierda */
+}

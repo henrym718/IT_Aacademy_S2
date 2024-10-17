@@ -11869,7 +11869,7 @@ textarea.form-control-lg {
 
 .card__divisor {
   height: 30px;
-  background-image: radial-gradient(circle, gray 5%, transparent 20%);
+  background-image: radial-gradient(circle, #efecf1 5%, transparent 20%);
   background-size: 25px 25px;
   margin: 20px 0;
 }
@@ -11930,24 +11930,84 @@ textarea.form-control-lg {
   flex-direction: column;
   position: relative;
   width: 100vw;
-  background-color: black;
   left: 50%;
   margin-left: -50vw;
 }
 
 .footer__items {
+  background-color: #252947;
+  height: 110px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__items__container {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
 .footer__items__left {
   display: flex;
-  align-items: center;
+  gap: 40px;
+}
+
+.footer__items__left__link {
+  display: flex;
+  gap: 60px;
+  color: aliceblue;
 }
 
 .footer__items__rigth {
   display: flex;
-  gap: 20px;
+  gap: 50px;
+}
+
+.footer__contact {
+  height: 450px;
+  width: 100%;
+  background-color: #5267de;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.footer__contact__items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.footer__contact__action {
+  display: flex;
+  gap: 10px;
+  height: 60px;
+}
+
+.nav-tabs .nav-link {
+  color: #a4a7a9; /* Cambia el color de los enlaces por defecto */
+  position: relative; /* Necesario para el pseudo-elemento */
+}
+
+.nav-tabs .nav-link.active {
+  color: #686b73; /* Cambia el color del enlace activo */
+  background-color: transparent; /* Elimina el fondo del enlace activo */
+  border: none; /* Elimina el borde del enlace activo */
+  font-weight: 500;
+}
+
+.nav-tabs .nav-link.active::after {
+  content: ""; /* Crea un pseudo-elemento */
+  display: block; /* Hace que el pseudo-elemento sea un bloque */
+  height: 4px; /* Altura de la línea, puedes ajustarla */
+  background-color: red; /* Color de la línea */
+  width: 100%; /* Ancho de la línea */
+  position: absolute; /* Para posicionar el pseudo-elemento */
+  bottom: -4px; /* Espacio debajo del enlace */
+  left: 0; /* Para que esté alineado a la izquierda */
 }
 
 body {
