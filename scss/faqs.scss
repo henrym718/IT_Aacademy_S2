@@ -11,7 +11,19 @@
 
 .faqs p {
   text-align: center;
+  color: #c6c7ca;
 }
+
+.faqs h3 {
+  color: #2f334e;
+}
+
+.faqs > button {
+  font-size: 12px;
+  width: 70px;
+  height: 40px;
+}
+
 .accordion {
   width: 100%;
 }

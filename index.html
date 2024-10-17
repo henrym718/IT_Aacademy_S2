@@ -10,7 +10,151 @@
   <body>
     <div class="main__container">
       <div class="container">
-        <!-- OTHERS COMPONENT -->
+        <!-- NAV COMPONENT -->
+        <nav class="navbar navbar-expand-lg">
+          <div class="navbar__container">
+            <!-- Elemento del logo -->
+            <a class="navbar-brand" href="#">
+              <img src="assets/logo-bookmark.svg" alt="Logo" />
+            </a>
+
+            <!-- Elementos de enlaces -->
+            <div class="d-flex align-items-center gap-4">
+              <ul class="navbar-nav gap-4">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">FEATURES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">PRICING</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">CONTACT</a>
+                </li>
+              </ul>
+
+              <button class="btn btn-secondary btn-lg">LOGIN</button>
+            </div>
+          </div>
+        </nav>
+
+        <!-- HERO COMPONENT -->
+        <div class="hero">
+          <div>
+            <h3>A Simple Bookmark Manager</h3>
+            <p>
+              A clean and simple nterface to organize your favorite websites.
+              Open a new browsertab and see your sites load nstantly. Try t for
+              free.
+            </p>
+            <div>
+              <button class="btn btn-primary">Get it on Chrome</button>
+              <button class="btn btn-light">Get it on Firefox</button>
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="assets/illustration-hero.svg" alt="hero" />
+            <div class="background-shape"></div>
+          </div>
+        </div>
+
+        <!-- FEATURES COMPONENT -->
+        <div class="features">
+          <h3>Features</h3>
+          <p>
+            Our iam is to make it quick and easy for youto accessyour favorite
+            websites. Your bookmarkssync between you devices so you can access
+            them or the go.
+          </p>
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a
+                class="link nav-link active"
+                onclick="showTabContent('feature1')"
+              >
+                Simple Bookmarking</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="link nav-link" onclick="showTabContent('feature2')"
+                >Speedy Searching</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="link nav-link" onclick="showTabContent('feature3')"
+                >Easy Sharing</a
+              >
+            </li>
+          </ul>
+
+          <!-- Features Page # 1 -->
+          <div id="feature1" class="feature__container">
+            <img
+              src="assets/illustration-features-tab-1.svg"
+              alt="features-tab-1."
+            />
+            <div class="feature__container__left">
+              <h3>Bookmark in one click</h3>
+              <p>
+                Organize your bookmarks however you like. Our simple
+                drag-and-drop interface gives you complete control over how you
+                manageyour favorite sites
+              </p>
+              <button class="btn btn-primary">More info</button>
+            </div>
+          </div>
+
+          <!-- Features Page # 2 -->
+          <div id="feature2" class="feature__container d-none">
+            <img
+              src="assets/illustration-features-tab-2.svg"
+              alt="features-tab-1."
+            />
+            <div class="feature__container__left">
+              <h3>Bookmark in one click</h3>
+              <p>
+                Organize your bookmarks however you like. Our simple
+                drag-and-drop interface gives you complete control over how you
+                manageyour favorite sites
+              </p>
+              <button class="btn btn-primary">More info</button>
+            </div>
+          </div>
+
+          <!-- Features Page # 3 -->
+          <div id="feature3" class="feature__container d-none">
+            <img
+              src="assets/illustration-features-tab-3.svg"
+              alt="features-tab-1."
+            />
+            <div class="feature__container__left">
+              <h3>Bookmark in one click</h3>
+              <p>
+                Organize your bookmarks however you like. Our simple
+                drag-and-drop interface gives you complete control over how you
+                manageyour favorite sites
+              </p>
+              <button class="btn btn-primary">More info</button>
+            </div>
+          </div>
+          <!-- Función para mostrar pagina de feature segun tab -->
+          <script>
+            function showTabContent(contentId) {
+              const divs = Array.from(
+                document.getElementsByClassName("feature__container")
+              );
+              divs.forEach((div) => div.classList.remove("d-flex"));
+              divs.forEach((div) => div.classList.add("d-none"));
+
+              const selectedDiv = document.getElementById(contentId);
+              selectedDiv.classList.remove("d-none");
+              selectedDiv.classList.add("d-flex");
+
+              const tabs = Array.from(document.getElementsByClassName("link"));
+              tabs.forEach((tab) => tab.classList.remove("active"));
+              event.target.classList.add("active");
+            }
+          </script>
+        </div>
 
         <!-- DOWNLOAD COMPONENT -->
         <div class="download">
@@ -153,7 +297,7 @@
             </h3>
             <div>
               <input type="text" />
-              <button class="btn btn-primary">Contac Us</button>
+              <button class="btn btn-secondary">Contac Us</button>
             </div>
           </div>
         </div>

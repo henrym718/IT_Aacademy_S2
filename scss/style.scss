@@ -1,3 +1,6 @@
+$primary: #5166e1;
+$secondary: #fa5959;
+
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/bootstrap";
@@ -6,7 +9,9 @@
 @import "./faqs.scss";
 @import "./footer.scss";
 @import "./download.scss";
-@import "./tabs.scss";
+@import "./features.scss";
+@import "./hero.scss";
+@import "./nav.scss";
 
 + {
   margin: 0;
