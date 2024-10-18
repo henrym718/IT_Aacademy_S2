@@ -11887,6 +11887,22 @@ textarea.form-control-lg {
   background-color: #c5caeb;
 }
 
+@media (max-width: 992px) {
+  .faqs {
+    width: 100%;
+  }
+  .faqs p {
+    width: 80%;
+  }
+}
+@media (max-width: 1200px) {
+  .faqs {
+    width: 80%;
+  }
+  .faqs p {
+    width: 80%;
+  }
+}
 .footer {
   display: flex;
   flex-direction: column;
@@ -11968,6 +11984,31 @@ textarea.form-control-lg {
   cursor: pointer;
 }
 
+@media (max-width: 992px) {
+  .footer__newsletter__container > div {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+  }
+  .footer__newsletter__container button,
+  .footer__newsletter__container input {
+    height: 120px;
+    width: 300px;
+  }
+  .footer__footer__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer__footer__container__left {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__footer__container__rigth {
+    padding-top: 40px;
+    gap: 40px;
+  }
+}
 .download {
   display: flex;
   flex-direction: column;
@@ -12027,6 +12068,16 @@ textarea.form-control-lg {
   top: 100px;
 }
 
+@media (max-width: 992px) {
+  .download__container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .download > p {
+    width: 350px !important;
+  }
+}
 .features {
   display: flex;
   flex-direction: column;
@@ -12099,6 +12150,41 @@ textarea.form-control-lg {
   left: 0; /* Para que esté alineado a la izquierda */
 }
 
+@media (max-width: 992px) {
+  .nav-tabs {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+  .feature__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .feature__container__left {
+    width: 350px !important;
+    text-align: center;
+  }
+  .feature__container__left button {
+    display: none;
+  }
+  .features > p {
+    width: 80vw !important;
+  }
+}
+@media (max-width: 1200px) {
+  .feature__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .feature__container__left {
+    width: 80%;
+    text-align: center;
+  }
+  .features > p {
+    width: 60vw !important;
+  }
+}
 .hero {
   display: flex;
   justify-content: center;
@@ -12154,6 +12240,47 @@ textarea.form-control-lg {
   z-index: 0;
 }
 
+@media (max-width: 992px) {
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90%;
+    text-align: center;
+    padding-bottom: 100px;
+    gap: 60px;
+  }
+  .hero > div {
+    gap: 30px;
+  }
+  .hero button {
+    width: 180px;
+    height: 50px;
+  }
+  .image-container {
+    margin-right: 190px;
+  }
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+  }
+}
+@media (max-width: 1200px) {
+  .image-container img {
+    width: 400px;
+    left: 120px;
+  }
+  .image-container div {
+    left: 160px;
+    top: 50px;
+  }
+}
+.tab-content {
+  padding-left: 400px;
+  gap: 25px;
+}
+
 .navbar__container {
   display: flex;
   justify-content: space-between;
@@ -12167,11 +12294,70 @@ textarea.form-control-lg {
   font-size: 13px;
 }
 
+.tab-content a:hover {
+  color: #5166e1;
+  transform: scale(1.2);
+}
+
+.tab-content button:hover {
+  transform: scale(1.2);
+}
+
 .navbar__container button {
   font-size: 13px;
   color: white;
   width: 100px;
   border-radius: 5px;
+}
+
+.navbar__container > button:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 992px) {
+  .navbar__container {
+    padding-top: 20px;
+    padding-bottom: 100px;
+    width: 100%;
+  }
+  .tab-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #2f344e;
+    text-align: center;
+    gap: 30px;
+    margin-top: 6px;
+    border-radius: 10px;
+  }
+  .tab-content a {
+    color: white;
+    font-size: 16px;
+  }
+  .tab-content a:hover {
+    color: gold;
+    transform: scale(1.2);
+  }
+  .tab-content button {
+    background-color: transparent;
+    width: 70%;
+    border-color: white;
+    font-size: 16px;
+  }
+  .tab-content button:hover {
+    transform: scale(1.2);
+  }
+  .nav__icons {
+    display: flex;
+    gap: 30px;
+  }
+  .nav__icons img:hover {
+    transform: scale(1.4);
+  }
+  .nav__icons img:hover {
+    cursor: pointer;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

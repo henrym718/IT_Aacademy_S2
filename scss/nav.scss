@@ -1,3 +1,8 @@
+.tab-content {
+  padding-left: 400px;
+  gap: 25px;
+}
+
 .navbar__container {
   display: flex;
   justify-content: space-between;
@@ -11,9 +16,79 @@
   font-size: 13px;
 }
 
+.tab-content a:hover {
+  color: #5166e1;
+  transform: scale(1.2);
+}
+
+.tab-content button:hover {
+  transform: scale(1.2);
+}
+
 .navbar__container button {
   font-size: 13px;
   color: white;
   width: 100px;
   border-radius: 5px;
 }
+
+.navbar__container > button:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 992px) {
+  .navbar__container {
+    padding-top: 20px;
+    padding-bottom: 100px;
+    width: 100%;
+  }
+
+  .tab-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #2f344e;
+    text-align: center;
+    gap: 30px;
+    margin-top: 6px;
+    border-radius: 10px;
+  }
+
+  .tab-content a {
+    color: white;
+    font-size: 16px;
+  }
+
+  .tab-content a:hover {
+    color: gold;
+    transform: scale(1.2);
+  }
+
+  .tab-content button {
+    background-color: transparent;
+    width: 70%;
+    border-color: white;
+    font-size: 16px;
+  }
+  .tab-content button:hover {
+    transform: scale(1.2);
+  }
+
+  .nav__icons {
+    display: flex;
+    gap: 30px;
+  }
+  .nav__icons img:hover {
+    transform: scale(1.4);
+  }
+
+  .nav__icons img:hover {
+    cursor: pointer;
+  }
+}
+
+// @media (max-width: 1200px) {
+//   .navbar__container {
+//   }
+// }

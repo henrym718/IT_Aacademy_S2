@@ -39,51 +39,22 @@
   }
 }
 
-// .faqs__container {
-//   display: flex;
-//   flex-direction: column;
-//   margin-top: 150px;
-//   justify-content: center;
-//   align-items: center;
-// }
+@media (max-width: 992px) {
+  .faqs {
+    width: 100%;
+  }
 
-// .faqs__header {
-//   width: 50%;
-//   text-align: center;
-//   margin: 0 auto;
-// }
+  .faqs p {
+    width: 80%;
+  }
+}
 
-// .faqs__header h2 {
-//   font-size: 50px;
-//   padding-bottom: 20px;
-// }
-// .faqs__header p {
-//   font-size: 20px;
-//   font-weight: 300;
-//   color: gray;
-// }
+@media (max-width: 1200px) {
+  .faqs {
+    width: 80%;
+  }
 
-// .faqs__body {
-//   width: 50%;
-//   margin-top: 40px;
-//   margin-left: auto;
-//   margin-right: auto;
-//   margin-bottom: 60px;
-// }
-// .accordion-item .accordion-button {
-//   font-size: 1.4rem;
-//   color: gray;
-//   font-weight: 500;
-// }
-
-// .accordion-item .accordion-body strong {
-//   font-size: 1.2rem;
-//   color: gray;
-//   font-weight: 300;
-// }
-
-// .faqs__container .btn {
-//   width: 200px;
-//   height: 50px;
-//   font-size: 20px;
-// }
+  .faqs p {
+    width: 80%;
+  }
+}

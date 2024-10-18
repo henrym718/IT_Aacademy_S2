@@ -81,3 +81,31 @@
 .footer__footer__container__rigth img {
   cursor: pointer;
 }
+
+@media (max-width: 992px) {
+  .footer__newsletter__container > div {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+  }
+
+  .footer__newsletter__container button,
+  .footer__newsletter__container input {
+    height: 120px;
+    width: 300px;
+  }
+
+  .footer__footer__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer__footer__container__left {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__footer__container__rigth {
+    padding-top: 40px;
+    gap: 40px;
+  }
+}

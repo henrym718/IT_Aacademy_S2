@@ -68,3 +68,44 @@
   bottom: -4px; /* Espacio debajo del enlace */
   left: 0; /* Para que esté alineado a la izquierda */
 }
+
+@media (max-width: 992px) {
+  .nav-tabs {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+  .feature__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .feature__container__left {
+    width: 350px !important;
+    text-align: center;
+  }
+  .feature__container__left button {
+    display: none;
+  }
+
+  .features > p {
+    width: 80vw !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .feature__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .feature__container__left {
+    width: 80%;
+    text-align: center;
+  }
+
+  .features > p {
+    width: 60vw !important;
+  }
+}

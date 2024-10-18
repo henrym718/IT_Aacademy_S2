@@ -52,3 +52,44 @@
   border-bottom-left-radius: 150px;
   z-index: 0;
 }
+
+@media (max-width: 992px) {
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90%;
+    text-align: center;
+    padding-bottom: 100px;
+    gap: 60px;
+  }
+
+  .hero > div {
+    gap: 30px;
+  }
+  .hero button {
+    width: 180px;
+    height: 50px;
+  }
+
+  .image-container {
+    margin-right: 190px;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 1200px) {
+  .image-container img {
+    width: 400px;
+    left: 120px;
+  }
+  .image-container div {
+    left: 160px;
+    top: 50px;
+  }
+}
